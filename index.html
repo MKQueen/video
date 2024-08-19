@@ -110,7 +110,9 @@
     <span></span>
 </div>
 <!-- 想听循环播放 -->
-<video src="one.mp4" controls loop id="myVideo" webkit-playsinline></video>
+<video controls loop id="myVideo" playsinline webkit-playsinline x5-playsinline>
+    <source src="one.mp4" type="video/mp4">
+</video>
 <script>
     document.getElementById('playButton').addEventListener('click', function() {
         let video = document.getElementById('myVideo');
